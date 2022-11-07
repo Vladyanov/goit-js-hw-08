@@ -12,8 +12,13 @@ player.getVideoTitle().then(function (title) {
   console.log('title:', title);
 });
 
-localStorage.setItem =
-  ('vimeo-pause',
-  player.on('timeupdate', function ({ seconds }) {
-    console.log(seconds);
-  }));
+player.on('timeupdate', function ({ seconds }) {
+  try {
+    localStorage.setItem = JSON.stringify(seconds);
+  } catch (error) {}
+  console.log(seconds);
+});
+
+try {
+  const data = JSON.parse('Well, this is awkward');
+} catch (error) {}
