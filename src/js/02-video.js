@@ -1,24 +1,18 @@
 import Player from '@vimeo/player';
+import _ from 'lodash';
 
 const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
-console.log(player);
 
-player.on('play', function () {
-  console.log('played the video!');
-});
+player.on(
+  'timeupdate',
+  _.throttle(function ({ seconds }) {
+    localStorage.setItem('videoplayer-current-time', JSON.stringify(seconds));
+  }, 1000)
+);
 
-player.getVideoTitle().then(function (title) {
-  console.log('title:', title);
-});
+const videoplayerStorageTime = () => {
+  return JSON.parse(localStorage.getItem('videoplayer-current-time'));
+};
 
-player.on('timeupdate', function ({ seconds }) {
-  try {
-    localStorage.setItem = JSON.stringify(seconds);
-  } catch (error) {}
-  console.log(seconds);
-});
-
-try {
-  const data = JSON.parse('Well, this is awkward');
-} catch (error) {}
+player.setCurrentTime(videoplayerStorageTime());
