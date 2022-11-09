@@ -1,6 +1,6 @@
 6129
 63D:\FrontEnd\GoIT\goit-js-hw-08\node_modules\lodash\defaultTo.js133123765774231497 0
-35D:\FrontEnd\GoIT\goit-js-hw-08\dist133124602436514210 1
+35D:\FrontEnd\GoIT\goit-js-hw-08\dist133124617384622438 1
 61D:\FrontEnd\GoIT\goit-js-hw-08\node_modules\lodash\fp\head.js133123765774931644 0
 70D:\FrontEnd\GoIT\goit-js-hw-08\node_modules\source-map-js\package.json133122363693140612 0
 60D:\FrontEnd\GoIT\goit-js-hw-08\node_modules\lodash\toPath.js133123765776992115 0
@@ -263,7 +263,7 @@
 91D:\FrontEnd\GoIT\goit-js-hw-08\node_modules\caniuse-lite\data\features\keyboardevent-key.js133122414263590145 0
 76D:\FrontEnd\GoIT\goit-js-hw-08\node_modules\yaml\dist\resolveSeq-d03cb037.js133122363694250868 0
 49D:\FrontEnd\GoIT\goit-js-hw-08\src\js\02-video.js133124140855713679 0
-52D:\FrontEnd\GoIT\goit-js-hw-08\src\js\03-feedback.js133124602434604410 0
+52D:\FrontEnd\GoIT\goit-js-hw-08\src\js\03-feedback.js133124610264582373 0
 102D:\FrontEnd\GoIT\goit-js-hw-08\node_modules\@parcel\core\test\fixtures\library-scopehoist\package.json133122363696621391 0
 93D:\FrontEnd\GoIT\goit-js-hw-08\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\module.c133122363695261082 0
 83D:\FrontEnd\GoIT\goit-js-hw-08\node_modules\caniuse-lite\data\features\classlist.js133122414260914549 0
@@ -5984,8 +5984,8 @@
 56D:\FrontEnd\GoIT\goit-js-hw-08\dist\02-video.a74b541c.js133124600992943218 0
 60D:\FrontEnd\GoIT\goit-js-hw-08\dist\02-video.a74b541c.js.map133124600993033239 0
 49D:\FrontEnd\GoIT\goit-js-hw-08\dist\02-video.html133124600992133026 0
-59D:\FrontEnd\GoIT\goit-js-hw-08\dist\03-feedback.5440b4f4.js133124602436464222 0
-63D:\FrontEnd\GoIT\goit-js-hw-08\dist\03-feedback.5440b4f4.js.map133124602436504208 0
+59D:\FrontEnd\GoIT\goit-js-hw-08\dist\03-feedback.5440b4f4.js133124617384492420 0
+63D:\FrontEnd\GoIT\goit-js-hw-08\dist\03-feedback.5440b4f4.js.map133124617384602452 0
 64D:\FrontEnd\GoIT\goit-js-hw-08\dist\03-feedback.ba2d0753.css.map133124600992093012 0
 65D:\FrontEnd\GoIT\goit-js-hw-08\dist\goit-js-hw-08.59712999.js.map133124600992133026 0
 46D:\FrontEnd\GoIT\goit-js-hw-08\dist\index.html133124600992943218 0
