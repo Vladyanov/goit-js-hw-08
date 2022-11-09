@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import throttle from 'lodash.throttle';
 
 const STORAGE_KEY = 'feedback-form-state';
 
@@ -17,7 +17,6 @@ const handleInput = e => {
   //   dataForStorage.password = e.target.value;
   // }
   dataForStorage[e.target.name] = e.target.value;
-
   localStorage.setItem(STORAGE_KEY, JSON.stringify(dataForStorage));
 };
 
@@ -42,7 +41,7 @@ const handleSubmit = e => {
   localStorage.removeItem(STORAGE_KEY);
 };
 
-refs.form.addEventListener('input', _.throttle(handleInput, 500));
+refs.form.addEventListener('input', throttle(handleInput, 500));
 refs.form.addEventListener('submit', handleSubmit);
 
 insertStorageDataToForm();
