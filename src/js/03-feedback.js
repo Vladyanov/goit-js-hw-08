@@ -8,16 +8,16 @@ const refs = {
   message: document.querySelector('textarea[name="message"]'),
 };
 
-const dataForStorage = {};
+let dataForStorage = {};
 
 const handleInput = e => {
-  // if (e.target.name === 'email') {
-  //   dataForStorage.email = e.target.value;
-  // } else {
-  //   dataForStorage.password = e.target.value;
-  // }
+  if (localStorage.getItem(STORAGE_KEY)) {
+    dataForStorage = JSON.parse(localStorage.getItem(STORAGE_KEY));
+  }
+
   dataForStorage[e.target.name] = e.target.value;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(dataForStorage));
+  dataForStorage = {};
 };
 
 const insertStorageDataToForm = () => {
