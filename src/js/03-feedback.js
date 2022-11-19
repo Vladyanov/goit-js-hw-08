@@ -45,3 +45,4 @@ refs.form.addEventListener('input', throttle(handleInput, 500));
 refs.form.addEventListener('submit', handleSubmit);
 
 insertStorageDataToForm();
+
